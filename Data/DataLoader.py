@@ -49,7 +49,6 @@ def load_dataList(ticker_list: list = None):
 
     data_list = {}
     for ticker in ticker_list:
-        data = load_data(ticker)
-        data_list[ticker] = data
+        data_list[ticker] = (load_data(ticker))
 
     return data_list
